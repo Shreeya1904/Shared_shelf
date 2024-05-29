@@ -1,0 +1,54 @@
+.bgimage {
+    background-image: url(../Imagesfixed/registerlib.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 98vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .lowopacity{
+      background-color: white;
+      text-align: center;
+      padding: 50px;
+  }
+  body {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+  .headerheading{
+    font-size: 100%;
+    color: #5400a3;
+}
+.form{
+    text-align: left;
+}
+.form br{
+  margin-bottom: 10px;
+}
+.formlabel{
+    border: none;
+}
+#forminput {
+  border: white solid 0.5px;
+  border-bottom: 0.5px solid #ddd;
+}
+
+#forminput:hover {
+  border-bottom: 3px solid #bc31fc;
+}
+
+.submitbutton{
+  background-color: #bc31fc;
+    color: white;
+    padding: 3px 35px;
+    border-radius: 9.6px;
+    font-size: 100%;
+}
+
+.submitbutton:hover{
+  cursor: pointer;
+}
+.warning{
+  color: rgb(219, 0, 0);
+}

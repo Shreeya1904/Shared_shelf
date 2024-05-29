@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HOME</h1>
+    <h1>Welcome <%= user.firstname %></h1>
+    <p>Your outlook is: <%= user.outlook %></p>
+    <a href="donate">Bookdrop</a>
+    <form action="/opencart" method="post">
+        <input type="text" name="outlook" value="<%= user.outlook%>">
+        <button type="submit"> open cart</button>
+    </form>
+
+    <div>
+        <% if (books.length > 0) { %>
+            <ul>
+                <% books.forEach(book => { %>
+                    <% if (!book.sold) { %>
+                        <li>
+                            <a href="/book/<%= book._id %>/<%= user.outlook%>" target="_blank">
+                                <h2>Title: <%= book.title %></h2>
+                            </a></button>
+                            <p>Author: <%= book.author %></p>
+                            <img src="./uploads/<%= book.bookimage %>" alt="Book Image">
+                        </li>
+                    <% } %>
+                <% }); %>
+                
+            </ul>
+        <% } else { %>
+            <p>No books found</p>
+        <% } %>
+    </div>
+
+    <div>
+        <% if (cartbooks.length > 0) { %>
+            <ul>
+                <% cartbooks.forEach(book => { %>
+                    <% if (!book.sold) { %>
+                        <li>
+                            <a href="/book/<%= book._id %>/<%= user.outlook%>" target="_blank">
+                                <h2>Title: <%= book.title %></h2>
+                            </a></button>
+                            <p>Author: <%= book.author %></p>
+                            <img src="./uploads/<%= book.bookimage %>" alt="Book Image">
+                            <div class="borrow from cart">
+                                <form action="/borrowcart" method="post">
+                                    <input type="text" name="id" value="<%= book._id %>">
+                                    <input type="text" name="active" value="<%= user.outlook%>">
+                                    <button class="borrow">Borrow</button>
+                                </form>
+                            </div>
+                            <div class="delete from cart">
+                                <form action="/delete" method="post">
+                                    <input type="text" name="id" value="<%= book._id %>">
+                                    <input type="text" name="outlook" value="<%= user.outlook%>">
+                                    <button class="delete">delete</button>
+                                </form>
+                            </div>
+                        </li>
+                    <% } %>
+                <% }); %>
+                
+            </ul>
+        <% } else { %>
+            <p>No books found</p>
+        <% } %>
+    </div>
+
+</body>
+</html>

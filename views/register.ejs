@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Imagesfixed/Logo_icon.png" sizes="16x16" />
+    <link rel="stylesheet" href="./CSS/register.css" />
+    <title>Join_Community</title>
+</head>
+<body>
+    <div class="bgimage">
+        <div class="lowopacity">
+            <div class="headerheading"><h1>Create a new account</h1></div>
+            <div></div>
+            <div class="form">
+                <form action="/register" method="post">
+                    <label class="formlabel">First name:</label>
+                    <input type="text" name="firstname" placeholder="" id="forminput" style="min-width: 275px;"><br>
+                    <label class="formlabel">Last name:</label>
+                    <input type="text" name="lastname" placeholder="" id="forminput" style="min-width: 275px;"><br>
+                    <label class="formlabel">Outlook Id:</label>
+                    <input type="text" name="outlook" placeholder="" id="forminput" style="min-width: 260px;"><br>
+                    <label class="formlabel">Contact No.:</label>
+                    <input type="text" name="contact" placeholder="" id="forminput" style="min-width: 250px;"><br>
+                    <label for="hostel">Hostel:</label>
+    <select id="hostel" name="hostel" id="formselect" style="min-width: 150px; text-align: center;" > 
+        <option value="NULL">Choose</option>
+        <option value="Subansiri">Subansiri</option>
+        <option value="Barak">Barak</option>
+        <option value="Brahmaputra">Brahmaputra</option>
+        <option value="Kameng">Kameng</option>
+        <option value="Siang">Siang</option>
+        <option value="Manas">Manas</option>
+        <option value="Disang">Disang</option>
+        <option value="Kapili">Kapili</option>
+        <option value="Dihing">Dihing</option>
+        <option value="Dhansiri">Dhansiri</option>
+        <option value="Umiam">Umiam</option>
+        <option value="Lohit">Lohit</option>
+    </select><br>
+    <label class="formlabel">Password:</label>
+    <input type="password" name="password" placeholder="" id="forminput" style="min-width: 200px;"><br><br>
+    <div style="text-align: center;"><input type="submit" value="Register" style="min-width: 150px;" class="submitbutton"></div>
+                </form>
+            </div>
+            <br>
+            <div><a href="signin">already exsisting user</a></div>
+        </div>
+    </div>
+</body>
+</html>

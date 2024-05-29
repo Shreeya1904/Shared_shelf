@@ -1,0 +1,91 @@
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  height: 90px;
+  background-color: white;
+}
+.headerlink {
+  display: flex;
+  justify-content: space-around;
+}
+.logoimage {
+  width: auto;
+  padding: 0% 20%;
+  height: 80px;
+}
+.headerlink {
+  display: flex;
+  padding: 2.5% 2%;
+  align-items: center;
+}
+#headerlinkname {
+  padding: 0% 18%;
+  font-size: 120%;
+}
+.linkheader:hover {
+  color: #9d00ff;
+}
+.linkheader {
+  text-decoration: none;
+  color: black;
+}
+.bookdetailsandimage {
+  background-color: rgb(242, 242, 169);
+  display: flex;
+}
+.invisible {
+  font-size: 0.00001px;
+  max-width: 0.00001px;
+  border: rgb(242, 242, 169) solid 1px;
+  background-color: rgb(242, 242, 169);
+}
+#optiondescription {
+  background-color: #bc31fc;
+  color: white;
+  padding: 3px 35px;
+  border-radius: 30px;
+  font-size: 130%;
+}
+#optiondescription:hover {
+  cursor: pointer;
+}
+.bookimage {
+  width: 300px;
+  height: 450px;
+}
+.formdescribe {
+  align-content: center;
+}
+.detailsofbook {
+  max-width: 600px;
+}
+.imageandoption {
+  padding: 80px 160px;
+}
+.forms {
+  padding: 10px 40px;
+}
+.detailsofbook {
+  padding: 50px;
+}
+.booktitle {
+  font-size: 290%;
+}
+.itemgenre {
+  background-color: #ffffff;
+  color: rgb(174, 0, 255);
+  padding: 3px 10px;
+  border-radius: 30px;
+  font-size: 100%;
+}
+.basicinfo {
+  padding: 5px 15px;
+}
+.ownerdetail {
+  font-size: 125%;
+}

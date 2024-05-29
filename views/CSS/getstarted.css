@@ -1,0 +1,77 @@
+body {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+   .header {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    height: 90px;
+    background-color: white;
+  }
+  
+  .logoimage {
+    width: auto;
+    padding: 0% 20%;
+    height: 80px;
+  }
+  
+  .login_register {
+    display: flex;
+    padding: 2.5% 6%;
+  }
+  .headerlink {
+    display: flex;
+    padding: 2.5% 2%;
+    align-items: center;
+  }
+  #headerlinkname {
+    padding: 0% 18%;
+    font-size: 120%;
+  }
+  #boxheader {
+    padding: 0% 8%;
+    font-size: 120%;
+  }
+  .linkheader:hover {
+    color: #9d00ff;
+  }
+  .linkheader {
+    text-decoration: none;
+    color: black;
+  }
+  .login_register{
+    align-items: center;
+  }
+  #registrationhead {
+    background-color: #d42dce;
+    color: white;
+    padding: 3px 35px;
+    border-radius: 9.6px;
+    font-size: 120%;
+  }
+  #registrationhead:hover {
+    background-color: #bc31fc;
+    transform: scale(1.2);
+  }
+  .bgimage {
+    background-image: url(../Imagesfixed/library.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .lowopacity{
+      background-color: white;
+      text-align: center;
+      opacity: 0.85;
+      padding: 50px;
+      border-radius: 30px;
+  }
+  .headerheading{
+      font-size: 130%;
+      color: #5400a3;
+  }
